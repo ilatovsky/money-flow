@@ -1,0 +1,14 @@
+type Category {
+	id: ID!
+	name: String!
+	transactions: [Transaction!]!
+	turnover: Float!
+}
+
+type CategoryQuery {
+	all: [Category!]!
+}
+
+extend type Query {
+	category: CategoryQuery!
+}

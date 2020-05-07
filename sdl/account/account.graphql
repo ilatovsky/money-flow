@@ -1,0 +1,14 @@
+type Account {
+	id: ID!
+	name: String!
+	transactions: [Transaction!]!
+	amount: Float!
+}
+
+type AccountQuery {
+	all: [Account!]!
+}
+
+extend type Query {
+	account: AccountQuery!
+}

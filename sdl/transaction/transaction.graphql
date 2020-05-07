@@ -1,0 +1,21 @@
+enum TRANSACTION_DIRECTION {
+	INCOMING
+	OUTCOMING
+}
+
+type Transaction {
+	id: ID!
+	account: Account!
+	direction: TRANSACTION_DIRECTION!
+	timestamp: DateTime!
+	amount: Float!
+	category: Category
+}
+
+type TransactionQuery {
+	all: [Transaction!]!
+}
+
+extend type Query {
+	transaction: TransactionQuery!
+}
