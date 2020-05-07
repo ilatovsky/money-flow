@@ -6,7 +6,8 @@
   "dependencies": {
     "apollo-server": "^2.13.0",
     "glob": "^7.1.6",
-    "graphql": "^15.0.0"
+    "graphql": "^15.0.0",
+    "graphql-scalars": "^1.1.2"
   },
   "devDependencies": {
     "@types/glob": "^7.1.1",
