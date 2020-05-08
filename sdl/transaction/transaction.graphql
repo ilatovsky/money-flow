@@ -8,7 +8,7 @@ type Transaction {
 	account: Account! @replaceFieldInModel(replacement: "string")
 	direction: TRANSACTION_DIRECTION!
 	timestamp: DateTime!
-	amount: Float! @excludeFieldFromModel
+	amount: Float!
 	category: Category @replaceFieldInModel(replacement: "string")
 }
 

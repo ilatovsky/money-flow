@@ -35,7 +35,7 @@ const models = Object.keys({...fieldsWithModelExcludeDirective, ...fieldsWithRep
 		
 		return {
 			...result,
-			[type]: `type ${type}Model = Omit<${type}, ${
+			[type]: `export type ${type}Model = Omit<${type}, ${
 				Object.keys({ ...fieldsWithModelExcludeDirective[type], ...fieldsWithReplaceFieldInModelDirective[type]}).map(
 					fieldName => `'${fieldName}'`
 				).join(' | ')

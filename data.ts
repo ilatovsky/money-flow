@@ -1,6 +1,6 @@
-import { Transaction_Direction } from './typings'
+import { Transaction_Direction, AccountModel, CategoryModel, TransactionModel } from './typings'
 
-export const accounts = [
+export const accounts: AccountModel[] = [
 	{
 		id: 'm0001',
 		name: 'Основной'
@@ -15,7 +15,7 @@ export const accounts = [
 	}
 ]
 
-export const categories = [
+export const categories: CategoryModel[] = [
 	{
 		id: 'ot0001',
 		name: 'Запланированные расходы'
@@ -34,7 +34,7 @@ export const categories = [
 	},
 ]
 
-export const transactions = [
+export const transactions: TransactionModel[] = [
 	{
 		id: '0001',
 		account: 'm0001',
