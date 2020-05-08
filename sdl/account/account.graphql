@@ -1,8 +1,8 @@
 type Account {
 	id: ID!
 	name: String!
-	transactions: [Transaction!]!
-	amount: Float!
+	transactions: [Transaction!]! @excludeFieldFromModel
+	amount: Float! @excludeFieldFromModel
 }
 
 type AccountQuery {

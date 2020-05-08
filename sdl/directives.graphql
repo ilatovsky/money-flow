@@ -1,0 +1,2 @@
+directive @excludeFieldFromModel on FIELD_DEFINITION
+directive @replaceFieldInModel(replacement: String!) on FIELD_DEFINITION

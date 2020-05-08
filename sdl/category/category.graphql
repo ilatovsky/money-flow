@@ -1,8 +1,8 @@
 type Category {
 	id: ID!
 	name: String!
-	transactions: [Transaction!]!
-	turnover: Float!
+	transactions: [Transaction!]! @excludeFieldFromModel
+	turnover: Float! @excludeFieldFromModel
 }
 
 type CategoryQuery {

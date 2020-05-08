@@ -5,11 +5,11 @@ enum TRANSACTION_DIRECTION {
 
 type Transaction {
 	id: ID!
-	account: Account!
+	account: Account! @replaceFieldInModel(replacement: "string")
 	direction: TRANSACTION_DIRECTION!
 	timestamp: DateTime!
-	amount: Float!
-	category: Category
+	amount: Float! @excludeFieldFromModel
+	category: Category @replaceFieldInModel(replacement: "string")
 }
 
 type TransactionQuery {
