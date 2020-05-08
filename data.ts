@@ -1,3 +1,5 @@
+import { Transaction_Direction } from './typings'
+
 export const accounts = [
 	{
 		id: 'm0001',
@@ -36,7 +38,7 @@ export const transactions = [
 	{
 		id: '0001',
 		account: 'm0001',
-		direction: 'INCOMING',
+		direction: Transaction_Direction.INCOMING,
 		timestamp: 'Thu, 07 May 2020 14:36:13 GMT',
 		category: 'is0003',
 		amount: 100000.33
@@ -44,7 +46,7 @@ export const transactions = [
 	{
 		id: '0002',
 		account: 'm0001',
-		direction: 'OUTCOMING',
+		direction: Transaction_Direction.OUTCOMING,
 		timestamp: 'Thu, 07 May 2020 14:49:26 GMT',
 		category: 'ot0001',
 		amount: 5600
