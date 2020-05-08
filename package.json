@@ -13,10 +13,12 @@
     "@graphql-codegen/core": "^1.13.5",
     "@graphql-codegen/typescript": "^1.13.5",
     "@graphql-codegen/typescript-resolvers": "^1.13.5",
+    "@graphql-toolkit/common": "^0.10.6",
+    "@types/flat": "^5.0.0",
     "@types/glob": "^7.1.1",
+    "flat": "^5.0.0",
     "nodemon": "^2.0.3",
     "ts-node": "^8.10.1",
-    "typescript": "^3.8.3",
-    "utility-types": "^3.10.0"
+    "typescript": "^3.8.3"
   }
 }
